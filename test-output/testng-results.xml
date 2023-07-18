@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-18T03:50:10 BST" name="Default suite" finished-at="2023-07-18T03:50:49 BST" duration-ms="38364">
+    <groups>
+    </groups>
+    <test started-at="2023-07-18T03:50:10 BST" name="Default test" finished-at="2023-07-18T03:50:49 BST" duration-ms="38364">
+      <class name="roshnatest1.eCommerce_TC_hybrid">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:roshnatest1.eCommerce_TC_hybrid@565f390]" started-at="2023-07-18T03:50:10 BST" name="ConfigureAppium" finished-at="2023-07-18T03:50:19 BST" duration-ms="8922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method signature="Fillform()[pri:0, instance:roshnatest1.eCommerce_TC_hybrid@565f390]" started-at="2023-07-18T03:50:19 BST" name="Fillform" finished-at="2023-07-18T03:50:48 BST" duration-ms="28693" status="FAIL">
+          <exception class="io.appium.java_client.NoSuchContextException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome '113.0.5672'. You could also try to enable automated chromedrivers download as a possible workaround.
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-76-generic', java.version: '17.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [0d545ced-418a-41e1-8e4e-f766bfe9306e, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
+Capabilities {appium:app: //home//roshnaelsajohn//mav..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: //home//roshnaelsajohn//mav..., automationName: UIAutomator2, deviceName: Pixel_3a, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2088, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 0d545ced-418a-41e1-8e4e-f766bfe9306e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.appium.java_client.NoSuchContextException: An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome '113.0.5672'. You could also try to enable automated chromedrivers download as a possible workaround.
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-76-generic', java.version: '17.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [0d545ced-418a-41e1-8e4e-f766bfe9306e, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
+Capabilities {appium:app: //home//roshnaelsajohn//mav..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: //home//roshnaelsajohn//mav..., automationName: UIAutomator2, deviceName: Pixel_3a, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2088, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 0d545ced-418a-41e1-8e4e-f766bfe9306e
+at io.appium.java_client.remote.SupportsContextSwitching.context(SupportsContextSwitching.java:48)
+at roshnatest1.eCommerce_TC_hybrid.Fillform(eCommerce_TC_hybrid.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome '113.0.5672'. You could also try to enable automated chromedrivers download as a possible workaround.
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-76-generic', java.version: '17.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [0d545ced-418a-41e1-8e4e-f766bfe9306e, switchToContext {name=WEBVIEW_com.androidsample.generalstore}]
+Capabilities {appium:app: //home//roshnaelsajohn//mav..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: //home//roshnaelsajohn//mav..., automationName: UIAutomator2, deviceName: Pixel_3a, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2088, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 0d545ced-418a-41e1-8e4e-f766bfe9306e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:308)
+at io.appium.java_client.remote.SupportsContextSwitching.context(SupportsContextSwitching.java:45)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.appium.java_client.NoSuchContextException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fillform -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:roshnatest1.eCommerce_TC_hybrid@565f390]" started-at="2023-07-18T03:50:48 BST" name="tearDown" finished-at="2023-07-18T03:50:49 BST" duration-ms="682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- roshnatest1.eCommerce_TC_hybrid -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
